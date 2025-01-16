@@ -29,7 +29,7 @@
   --lightblue: #9daaf2;
   --darkblue: #1a2238;
   --blackblue: #0c1220;
-  --orange: #ff6a3d;
+  --orange: #5bb7db; /* #ff6a3d */
   --box-shadow-color: inherit;
   --transparent: transparent;
 }
@@ -263,12 +263,12 @@ a {
 
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px #ff6a3d00;
+    box-shadow: 0 0 0 10px #5bb7db00;
   }
 
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 #ff6a3d00;
+    box-shadow: 0 0 0 0 #5bb7db00;
   }
 }
 .quote-outer-container {
@@ -502,4 +502,43 @@ a {
 .popup-content {
   animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
   -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.stroke-blue {
+  stroke: #5bb7db;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0 50%
+  }
+
+  to {
+      background-position: 100% 50%
+  }
+}
+
+.text-animation {
+  background: linear-gradient(to right,var(--lightblue) 20%,#db734b 40%,var(--lightblue) 70%,#db734b 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+.opacity-0 {
+  opacity: 0
+}
+
+.opacity-100 {
+  opacity: 1
+}
+
+.opacity-20 {
+  opacity: .2
+}
+
+.opacity-30 {
+  opacity: .3
 }
