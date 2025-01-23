@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
@@ -8,7 +8,7 @@ import LanguageContextProvider from "./context/language-context";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter >
         <ThemeContextProvider>
           <LanguageContextProvider>
             <ActiveSectionContextProvider>
@@ -20,7 +20,7 @@ function App() {
             </ActiveSectionContextProvider>
           </LanguageContextProvider>
         </ThemeContextProvider>
-      </BrowserRouter>
+      </HashRouter >
     </>
   );
 }
