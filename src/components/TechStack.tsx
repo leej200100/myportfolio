@@ -49,7 +49,7 @@ const TechStack: React.FC = () => {
             </p>
             <h2>
               {language === "DE"
-                ? "Meine Techstack und Skills"
+                ? "私の技術スタックとスキル"
                 : "My TechStack and Skills"}
             </h2>
           </motion.div>

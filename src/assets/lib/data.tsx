@@ -26,7 +26,9 @@ import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
-import profilepicture from "../img/me2.webp";
+import filemate from "../../assets/img/filmate.png";
+// import freakingFit from "../../assets/img/freaking_fit.png";
+import profilepicture from "../img/me2.png";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
@@ -39,19 +41,19 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Daniel",
+    de: "こんにちは、李志成です",
+    en: "Hi, I'm ZhiCheng Lee",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Daniel, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "私はフルスタック開発者の 志成 です。キャリアアップと刺激的なプロジェクトへの参加を目標としています。ここでは、私の仕事と Web 開発への情熱を紹介します。一緒にデジタル ソリューションを形作り、未来を形作りましょう。",
+    en: "I'm ZhiCheng, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        de: "連絡する",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +62,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
+        de: "私のプロジェクト",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -74,7 +76,7 @@ export const projectsData = [
   {
     title: "Tasty App",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "React と MealDB API を使用してチームで構築したレシピ アプリです。私はフロントエンド開発者として、音声検索や PDF への印刷などの機能をプログラムしました。デザインは Figma で作成しました。Web サイトはレスポンシブでモバイルに最適化されています。",
     description_EN:
       "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
     technologies: [
@@ -101,9 +103,40 @@ export const projectsData = [
     },
   },
   {
+    title: "Filmate",
+    description:
+      "OpenAI GPT-3.5 Turbo、Qdrant、React、Flask を使用して、セマンティック検索と感情分析を備えた映画検索アプリを開発しました。",
+    description_EN:
+      "Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+    ],
+    image: filemate,
+    deploymenturl: "https://www.filmate.club/",
+    githuburl:
+      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
     title: "Silentmoon",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "React、MongoDB、Express、Node.js を使用してチームで構築したヨガと瞑想のアプリです。Git マスターおよびバックエンド開発者としての私の仕事は、RESTful API を使用して接続するバックエンドをプログラムし、MongoDB でデータベースをモデル化することでした。",
     description_EN:
       "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
     technologies: [
@@ -136,7 +169,7 @@ export const projectsData = [
   {
     title: "Furniture Organizer",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "React、MongoDB、Express、Node.js を使用して 2 人組でプログラミングした家具オーガナイザー アプリです。Git マスターとして、フロントエンドとバックエンドの接続とデータベース モデリングを担当しました。アプリはレスポンシブでモバイルに最適化されています。",
     description_EN:
       "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
     technologies: [
@@ -169,7 +202,7 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    de: "Github のその他のプロジェクト",
     en: "More Projects on Github",
   },
 } as const;
@@ -297,36 +330,36 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { de: "ホームページ", en: "Home", hash: "#home", icon: GoHome },
+  { de: "スキル", en: "Skills", hash: "#skills", icon: GoStack },
+  { de: "プロジェクト", en: "Projects", hash: "#projects", icon: GoProject },
+  { de: "経験", en: "Experience", hash: "#about-me", icon: GoPerson },
+  { de: "お問い合わせ", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { de: "インプリント", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { de: "プライバシー", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
+  link: "mailto:leej200100@gmail.com",
   text: "myemail@com",
 } as const;
 
 export const sideBarLeftSocials = [
+  // {
+  //   link: "https://www.linkedin.com/in/leej200100/",
+  //   icon: FiLinkedin,
+  //   altimgname: "linkedin",
+  // },
   {
-    link: "https://www.linkedin.com/in/alpay/",
-    icon: FiLinkedin,
-    altimgname: "linkedin",
-  },
-  {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/leej200100",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:leej200100@gmail.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -334,58 +367,58 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    de: '"最初に正しく行うことは全く重要ではありません。最後に正しく行うことが極めて重要です。"',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    de: '"Web はキャンバスのようなもので、コードは絵の具です。傑作を作りましょう。"',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
-  title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
-  description_EN: "A few code snippets about me",
+  title: "経験",
+  title_EN: "Experience",
+  description: "私の経験",
+  description_EN: "My Experiences",
   paragraphs_DE: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "OnTheBeach | マンチェスター | www.onthebeach.co.uk",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "ダウンタイムをゼロに維持しながらトラフィックの 50% 増加をサポートする柔軟なコードベースを設計し、ユーザー維持率を 15% 向上させました。",
       icon: hardwareicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "SweatyBetty | ロンドン | www.sweatybetty.com",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "トラフィックの多いページでサーバー側レンダリング (SSR) を調整し、読み込み時間が 25% 短縮され、検索エンジンのランキングが向上しました。",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "Dorsett | 香港 | www.dorsett.com",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "フロントエンド Web 開発者として、Next.js を使用して Web フロントエンドを再開発し、サーバー負荷を 30% 削減し、訪問者トラフィックを 20% 増加させました。",
       icon: travelicon,
     },
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "OnTheBeach | Manchester | www.onthebeach.co.uk",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "Architected a flexible codebase that supported a 50% increase in traffic while maintaining zero downtime, boosting user retention by 15%. ",
       icon: hardwareicon,
     },
     {
-      title: "On the Fast Lane of Life",
+      title: "SweatyBetty | London | www.sweatybetty.com",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+        "Orchestrated server-side rendering (SSR) on high-traffic pages, resulting in 25% faster loading times and improved search engine rankings.",
       icon: caricon,
     },
     {
-      title: "The Joy of Discovery as a Life Motto",
+      title: "Dorsett | Hong Kong | www.dorsett.com",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
+        "As a Frontend Web Developer, Redeveloped the web frontend with Next.js, cutting server load by 30%,and enabling 20% growth in visitor traffic.",
       icon: travelicon,
     },
   ],
@@ -393,23 +426,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    de: "お問い合わせ",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    de: "メッセージを書いていただければ、折り返しご連絡いたします。",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
+        de: "あなたの名前",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
+        de: "お名前を入力してください",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -417,12 +450,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
+        de: "あなたのEメール",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
+        de: "メールアドレスを入力してください",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -430,12 +463,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
+        de: "あなたの主題",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
+        de: "件名を入力してください",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -443,20 +476,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
+      de: "あなたのメッセージ",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
+      de: "メッセージを入力してください",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
+      de: "送信",
       en: "Send",
     },
   },
@@ -469,11 +502,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      de: "私は、志成 が私に連絡する目的で私の個人データ (名前と電子メール アドレス) を使用することに同意します。",
+      en: "I agree that ZhiCheng may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      de: "このリクエストを送信することにより、あなたはプライバシーポリシーを読んだことを認めます",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -481,26 +514,26 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
+    de: "🦄 ライブデモがまもなく開始されます。サーバーを起動しています...",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
+    de: "🦄 メールをありがとうございます。できるだけ早く返信させていただきます。",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
+    de: "🦄 残念ながらメールの送信に失敗しました。しばらくしてからもう一度お試しください。",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
+    de: "お名前を入力してください",
     en: "Please fill in your name",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
+    de: "JA",
     en: "EN",
   },
 } as const;

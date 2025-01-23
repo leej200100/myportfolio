@@ -73,11 +73,11 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                {language === "DE" ? "プロジェクト" : "Projects"}
                 <span className="text-[--orange]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
+                {language === "DE" ? "私のプロジェクト" : "My Projects"}
               </h2>
             </motion.div>
             <Swiper
@@ -136,13 +136,13 @@ const ProjectSlider: React.FC = () => {
                         iconcolor={project.colors.icon}
                         onClick={notifyServerRequest}
                       />
-                      <Button
+                      {/* <Button
                         label="Github Repository"
                         link={project.githuburl}
                         iconSVG={project.githubicon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -176,13 +176,13 @@ const ProjectSlider: React.FC = () => {
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
-                  <Button
+                  {/* <Button
                     label="Github Repository"
                     link={project.githuburl}
                     iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
-                  />
+                  /> */}
                 </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "DE"

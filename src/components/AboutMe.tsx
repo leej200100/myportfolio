@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import me from "../assets/img/me.webp";
+import me from "../assets/img/me.png";
 import { aboutMeData } from "../assets/lib/data";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -83,13 +83,13 @@ const AboutMe: React.FC = () => {
                 key={index}
               >
                 <div className="flex gap-6 flex-row justify-start items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ">
-                  <div>
+                  {/* <div>
                     <img
                       src={paragraph.icon}
                       alt={paragraph.icon}
                       className="w-24"
                     />
-                  </div>
+                  </div> */}
                   <div>
                     <h2>{paragraph.title}</h2>
                   </div>

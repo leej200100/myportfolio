@@ -23,7 +23,8 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        // className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-1/6  max-lg:w-3/4"
       />
       <h1>
         {language === "DE"
@@ -31,7 +32,7 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
-      <h1 class="text-center max-lg:text-5xl max-lg:px-8 text-animation">{headerIntroData.subtitle}</h1>
+      <h1 className="text-center max-lg:text-5xl max-lg:px-8 text-animation">{headerIntroData.subtitle}</h1>
       <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de
