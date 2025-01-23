@@ -35,7 +35,7 @@ import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLink, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 

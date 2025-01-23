@@ -2,13 +2,13 @@ import { useTheme } from "../context/theme-context";
 import {
   BsMoon,
   BsSun,
-  BsLinkedin,
-  BsFillEnvelopeAtFill,
-  BsGithub,
+  // BsLinkedin,
+  // BsFillEnvelopeAtFill,
+  // BsGithub,
 } from "react-icons/bs";
-import { sideBarLeftSocials } from "../assets/lib/data";
+// import { sideBarLeftSocials } from "../assets/lib/data";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
